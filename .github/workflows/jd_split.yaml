@@ -7,7 +7,7 @@ on:
     watch:
         types: [started]
     repository_dispatch:
-        types: jd_jdfactory
+        types: jd_split
 
 jobs:
     build:
@@ -33,4 +33,4 @@ jobs:
                   TG_USER_ID: ${{ secrets.TG_USER_ID || github.event.client_payload.TG_USER_ID }}
                   DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN || github.event.client_payload.DD_BOT_TOKEN }}
                   DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET || github.event.client_payload.DD_BOT_SECRET }}
-                  SYNCURL: https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js
+                  SYNCURL: https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
